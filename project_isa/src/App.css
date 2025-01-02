@@ -1,0 +1,271 @@
+/* Global Styles (same as before - omitted for brevity, include these in full) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f8ff;
+  color: #4a4a4a;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar Styles (same as before - omitted for brevity, include these in full) */
+.navbar {
+  background: linear-gradient(to right, #b8e2fc, #e8f3fe);
+  padding: 1.4rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+
+.navbar-logo {
+  color: #3071a6;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #56a3d8;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-link {
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #777;
+}
+
+/* Table Styles (same as before - omitted for brevity, include these in full) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0f2f1;
+}
+
+th,
+td {
+  border: 1px solid #e0f2f1;
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #e0f7fa;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+/* Form Styles (same as before - omitted for brevity, include these in full) */
+form {
+  max-width: 650px;
+  margin: 2.5rem 0;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0f2f1;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+select {
+  width: calc(100% - 18px);
+  padding: 14px;
+  border: 1px solid #b2ebf2;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+  transition: border-color 0.2s ease;
+}
+select:focus {
+  outline: none;
+  border-color: #6dd5ed;
+}
+/* Button Styles with Animations */
+button {
+  background-color: #58b6b3;
+  color: white;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Transition for color & scale */
+}
+
+button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  background-color: #308d89; /* Darker color on hover */
+  transform: scale(1.03); /* Slightly scale up on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Message Styles (same as before - omitted for brevity, include these in full) */
+p {
+  margin: 12px 0;
+}
+
+h2 {
+  margin-bottom: 2.5rem;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.allocation-section {
+  margin-bottom: 3.5rem;
+  padding: 2.5rem;
+  border: 1px solid #b2ebf2;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.classroom-status {
+  margin-bottom: 2.5rem;
+  padding: 1.8rem;
+  background-color: #f0f8ff;
+  border: 1px solid #b2ebf2;
+  border-radius: 12px;
+}
+
+.classroom-status p {
+  margin: 10px 0;
+}
+
+/* Buttons and other visual elements */
+
+.clear-room-btn {
+  background-color: #e57373;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.clear-room-btn:hover {
+  background-color: #e85353;
+  transform: scale(1.03); /* Slightly scale up on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.manual-allocation {
+  margin: 2.5rem 0;
+  padding: 2.5rem;
+  border: 1px solid #b2ebf2;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Error and Success Messages (same as before - omitted for brevity, include these in full) */
+.error {
+  color: #721c24;
+  margin-top: 10px;
+  padding: 1.2rem;
+  background-color: #ffebee;
+  border: 1px solid #ef9a9a;
+  border-radius: 6px;
+}
+
+.success {
+  color: #1b5e20;
+  margin-top: 10px;
+  padding: 1.2rem;
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+}
+
+/* Filters (same as before - omitted for brevity, include these in full) */
+.filters {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+
+.filters div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+select {
+  padding: 8px 10px;
+}
+/* Responsive Adjustments (same as before - omitted for brevity, include these in full) */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+  .navbar-logo {
+    margin-bottom: 1.2rem;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 0.6rem;
+  }
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
